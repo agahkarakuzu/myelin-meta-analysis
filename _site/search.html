@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Search the site | The quest for measuring myelin with MRI – An interactive meta-analysis</title>
+<meta name="generator" content="Jekyll v3.7.4" />
+<meta property="og:title" content="Search the site" />
+<meta name="author" content="Matteo Mancini" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This Jupyter Book explores an important aspect of quantitative magnetic resonance imaging (qMRI): validation." />
+<meta property="og:description" content="This Jupyter Book explores an important aspect of quantitative magnetic resonance imaging (qMRI): validation." />
+<link rel="canonical" href="http://localhost:4000/search" />
+<meta property="og:url" content="http://localhost:4000/search" />
+<meta property="og:site_name" content="The quest for measuring myelin with MRI – An interactive meta-analysis" />
+<script type="application/ld+json">
+{"author":{"@type":"Person","name":"Matteo Mancini"},"description":"This Jupyter Book explores an important aspect of quantitative magnetic resonance imaging (qMRI): validation.","@type":"WebPage","headline":"Search the site","url":"http://localhost:4000/search","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=80b64d5cd944df975c48320625d74a7246fb4e36">
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+      <h1><a href="http://localhost:4000/"><center> The quest for measuring myelin with MRI – An interactive meta-analysis </center></a></h1>
+      
+
+      <div class="search-content__inner-wrap">
+    <input type="text" id="lunr_search" class="search-input" tabindex="-1" placeholder="'Enter your search term...''" />
+    <div id="results" class="results"></div>
+</div>
+
+<script>
+    // Add the lunr store since we will now search it
+    var store = [{
+        "title": "Selecting the studies",
+        
+        "excerpt":
+            "Selecting the studies Selecting the studies First, how were the studies selected? We used the Medline database and retrieved all the records mentioning (1) myelin, (2) MRI and (3) histology (or a related technique). The full list of keywords is provided in the preprint. The following Sankey diagram shows the screening process: you can hover with the mouse on each block and connection to see details about the number of studies and exclusion criteria. import numpy as np import pandas as pd import plotly.graph_objects as go import plotly.express as px import plotly.colors from plotly.subplots import make_subplots from rpy2.robjects.packages import importr...",
+        "categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/01/selection.html",
+        "teaser":null},{
+        "title": "Brain studies",
+        
+        "excerpt":
+            "Brain studies A closer look Given the number of different variables influencing the results, we decided to focus only on brain studies. As we needed to take into account the sample size for quantitative comparisons, we also further selected only the studies that reported both the number of subjects and the number of ROIs (regions of interest) considered for correlation purposes. This further screening led us to 43 studies. For these studies we wanted to quantitatively evaluate the reported effect size taking into account the respective samples sizes: we chose the coefficient of determination R2, as it was the most...",
+        "categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/02/closer_look.html",
+        "teaser":null},{
+        "title": "Using meta analysis tools",
+        
+        "excerpt":
+            "Using meta analysis tools Using meta-analysis tools Can we express quantitatively what we observed in the previous plots? This is where the meta-analysis tools come in: we used the R package metafor to fit a mixed-effect (ME) model to the data reported for each measure. In this way, we can estimate an overall interval of R2 values based on the effect sizes and the sample sizes. We can also estimate the interval of R2 that we can expect in future studies (this is called prediction interval). A compact way to represent these results is given by forest plots: for each...",
+        "categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/03/meta_analysis.html",
+        "teaser":null},{
+        "title": "Introduction",
+        
+        "excerpt":
+            "Introduction The quest for measuring myelin with MRI &#8211; An interactive meta-analysis This Jupyter Notebook explores an important aspect of quantitative magnetic resonance imaging (qMRI): validation. Focusing specifically on myelin measures, we show the results of our meta-analysis comparing quantitative MRI with histology. The full preprint is available on bioRxiv. Why myelin? Myelin is a key component of the central nervous system. The myelin sheaths insulate axons with a triple effect: allowing fast electrical conduction, protecting the axon, and providing trophic support. The conduction velocity regulation has become an important research topic, with evidence of activity-dependent myelination as an additional...",
+        "categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/intro.html",
+        "teaser":null},]
+</script>
+
+      
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', '{"mytrackingcode"=>""}', 'auto');
+      ga('send', 'pageview');
+    </script>
+    
+  </body>
+</html>
