@@ -24,9 +24,9 @@
 - header: Content
 
 # Top-level page
-- title: Introduction
+- title: Home
   url: /intro
-  not_numbered: true
+  not_numbered: true`
 
 - divider: true
 
