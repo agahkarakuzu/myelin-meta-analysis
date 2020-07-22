@@ -35,3 +35,18 @@ div.top-navbar {
 	margin-bottom: 1px;
 	
 }
+
+aside.sidebar__right{
+
+    visibility: hidden !important;
+}
+
+.c-topbar .topbar-right-button{
+
+    visibility: hidden !important;
+}
+
+.c-textbook__content{
+    max-width: 1000px !important;
+    width:110% !important;
+}

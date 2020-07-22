@@ -31,22 +31,22 @@
 - divider: true
 
 
-- header: Interact
+- header: Selecting the studies
 
-- title: Selecting the studies
+- title: Literature overview
   url: /01/selection
   not_numbered: true
 
 
-- header: Closer look
+- header: A closer look
 
-- title: Brain studies
+- title: Sample size and effect size
   url: /02/closer_look
   not_numbered: true
 
-- header: Meta analysis
+- header: Using meta-analysis tools
 
-- title: Using meta analysis tools
+- title: Quantitative comparisons
   url: /03/meta_analysis
   not_numbered: true
 
