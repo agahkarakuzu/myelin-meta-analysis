@@ -24,22 +24,19 @@
 - header: Content
 
 # Top-level page
-- title: Home
+- title: Introduction
   url: /intro
-  not_numbered: true`
+  not_numbered: true
 
 - divider: true
 
 
-- header: Selection 
-
-- divider: true
+- header: Interact
 
 - title: Selecting the studies
   url: /01/selection
   not_numbered: true
 
-- divider: true
 
 - header: Closer look
 
@@ -53,14 +50,14 @@
   url: /03/meta_analysis
   not_numbered: true
 
+
+- divider: true
+
+- header: External links 
+
+
 # External link
 - title: GitHub repository
-  url: https://github.com/jupyter/jupyter-book
+  url: https://github.com/agahkarakuzu/myelin-meta-analysis
   external: true
   not_numbered: true
-
-
-# Adds a searchbar link
-- title: Search
-  search: true
-
