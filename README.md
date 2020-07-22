@@ -1,5 +1,5 @@
-The quest for measuring myelin with MRI – An interactive meta-analysis
-=========================================================
+## The quest for measuring myelin with MRI – An interactive meta-analysis
+*** 
 
 [![Binder](https://github.com/zelenkastiot/binder_badges/blob/master/badges/myelin--meta--analysis-binder.svg)](https://mybinder.org/v2/gh/agahkarakuzu/myelin-meta-analysis/master?filepath=meta-analysis.ipynb)
 
@@ -11,7 +11,7 @@ This repository contains the Jupyter Notebook to generate the interactive figure
 
 <br>
 
-## Execute the notebook locally
+### Execute the notebook locally
 
 The required packages can be installed using pip:
 
