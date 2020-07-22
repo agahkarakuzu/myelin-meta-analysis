@@ -29,3 +29,9 @@ div.top-navbar {
 .c-textbook__sidebar {
     left: 7vh;
 }
+
+.inner_cell.hidden {
+		
+	margin-bottom: 1px;
+	
+}

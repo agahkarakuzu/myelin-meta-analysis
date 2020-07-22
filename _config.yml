@@ -127,7 +127,7 @@ defaults:
     toc_icon: list-ul
     excerpt: ''
 
-favicon_path: http://conp.ca/wp-content/uploads/2018/04/Icon.png
+favicon_path: images/Icon.png
 
 # Markdown Processing
 markdown: kramdown
