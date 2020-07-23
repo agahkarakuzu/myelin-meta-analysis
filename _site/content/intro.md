@@ -3,7 +3,7 @@ The quest for measuring myelin with MRI – An interactive meta-analysis
  
 <br>
 
-This Jupyter Notebook explores an important aspect of quantitative magnetic resonance imaging (qMRI): **validation**. Focusing specifically on **myelin measures**, we show the results of our **meta-analysis comparing quantitative MRI with histology**. [The full preprint is available on bioRxiv.](https://www.biorxiv.org/content/10.1101/2020.07.13.200972v2)
+This Jupyter Book explores an important aspect of quantitative magnetic resonance imaging (qMRI): **validation**. Focusing specifically on **myelin measures**, we show the results of our **meta-analysis comparing quantitative MRI with histology**. [The full preprint is available on bioRxiv.](https://www.biorxiv.org/content/10.1101/2020.07.13.200972v2)
 
 **Why myelin?** Myelin is a key component of the central nervous system. The myelin sheaths insulate axons with a triple effect: allowing fast electrical conduction, protecting the axon, and providing trophic support. The conduction velocity regulation has become an important research topic, with evidence of activity-dependent myelination as an additional mechanism of plasticity. Myelin is also relevant from a clinical perspective, given that demyelination is often observed in several neurological diseases such as multiple sclerosis.
 
@@ -13,8 +13,8 @@ This Jupyter Notebook explores an important aspect of quantitative magnetic reso
 <br>
 
 ---
-**A bit more about this Jupyter Notebook**
+**A bit more about this Jupyter Book**
 
-The main idea for this Jupyter Notebook is to let you interactively explore our dataset. For this reason, in the next pages you will find brief descriptions of what has been done, but the figures (realized with [plotly](https://plotly.com)) are the main content. You will not find sections discussing or interpreting these results: for that, please check the [preprint](https://www.biorxiv.org/content/10.1101/2020.07.13.200972v2).
+The main idea for this Jupyter Book is to let you interactively explore our dataset. For this reason, in the next pages you will find brief descriptions of what has been done, but the figures (realized with [plotly](https://plotly.com)) are the main content. You will not find sections discussing or interpreting these results: for that, please check the [preprint](https://www.biorxiv.org/content/10.1101/2020.07.13.200972v2).
 
 ---
