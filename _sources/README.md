@@ -1,35 +1,89 @@
-# myelin-meta-analysis
+The quest for measuring myelin with MRI - An interactive meta-analysis
+======================================================================
 
-This cookiecutter creates a simple boilerplate for a Jupyter Book.
+_Matteo Mancini, Agah Karakuzu, Thomas Nichols, Julien Cohen-Adad, Mara Cercignani, Nikola Stikov_
 
-## Usage
+<br>
 
-### Building the book
+This repository generates the interactive figures and the meta-analysis results for our study "The quest for measuring myelin with MRI – An interactive meta-analysis of quantitative comparisons with histology".
 
-If you'd like to develop on and build the myelin-meta-analysis book, you should:
+###  📎[The full preprint is available on bioRxiv.](https://www.biorxiv.org/content/10.1101/2020.07.13.200972v2)
 
-- Clone this repository and run
-- Run `pip install -r requirements.txt` (it is recommended you do this within a virtual environment)
-- (Recommended) Remove the existing `myelin-meta-analysis/_build/` directory
-- Run `jupyter-book build myelin-meta-analysis/`
 
-A fully-rendered HTML version of the book will be built in `myelin-meta-analysis/_build/html/`.
 
-### Hosting the book
+## 🖥 Usage instructions 
 
-The html version of the book is hosted on the `gh-pages` branch of this repo. A GitHub actions workflow has been created that automatically builds and pushes the book to this branch on a push or pull request to main.
+This Jupyter Book is published by NeuroLibre at <a href="https://neurolibre.github.io/myelin-meta-analysis">https://neurolibre.github.io/myelin-meta-analysis</a>, where all the interactive content is made readily available!
 
-If you wish to disable this automation, you may remove the GitHub actions workflow and build the book manually by:
+However, several options are available if you would like to reproduce the outputs
+by re-executing the code. 
 
-- Navigating to your local build; and running,
-- `ghp-import -n -p -f myelin-meta-analysis/_build/html`
+<details><summary> <b>💻 Execute locally</b> </font> </summary><br>
 
-This will automatically push your build to the `gh-pages` branch. More information on this hosting process can be found [here](https://jupyterbook.org/publish/gh-pages.html#manually-host-your-book-with-github-pages).
+The required packages can be installed using pip:
 
-## Contributors
+```
+pip install -r requirements.txt
+```
 
-We welcome and recognize all contributions. You can see a list of current contributors in the [contributors tab](https://github.com/agahkarakuzu/myelin_meta_analysis/graphs/contributors).
+---
+**Note:**
 
-## Credits
+R and the metafor package are both needed to fit the mixed-effect model in `meta-analysis.ipynb` through the package rpy2. Alternatively, you can use the conda environment described in `environment.yml`.
 
-This project is created using the excellent open source [Jupyter Book project](https://jupyterbook.org/) and the [executablebooks/cookiecutter-jupyter-book template](https://github.com/executablebooks/cookiecutter-jupyter-book).
+---
+</details>
+
+<details><summary> <b>🐳 Use with Docker</b> </font> </summary><br>
+
+If you have Docker installed on your computer and running, you can run the code 
+in the same environment described in this repository using `repo2docker`. 
+
+1. Simply install `repo2docker` from pyPI: 
+```
+pip install jupyter-repo2docker
+```
+2. Run the following command in your terminal:
+```
+jupyter-repo2docker https://github.com/neurolibre/myelin-meta-analysis
+```
+
+After building (it might take a while!), it should output in your terminal 
+something like:
+
+```
+Copy/paste this URL into your browser when you connect for the first time,
+    to login with a token:
+        http://0.0.0.0:36511/?token=f94f8fabb92e22f5bfab116c382b4707fc2cade56ad1ace0
+```
+
+This should start a Jupyter session on your browser and make all the resources 
+you see when you [launch a Binder](https://mybinder.org/v2/gh/neurolibre/myelin-meta-analysis/master) for this repository. 
+
+To re-use your container built by repo2docker, do the following: 
+
+1. Run `docker images` command and copy the `IMAGE ID` to your clipboard 
+2. Run the following command to start the container:
+```
+docker run -it --rm -p 8888:8888 `PASTE IMAGE ID HERE` jupyter notebook --ip 0.0.0.0
+```
+</details>
+
+<details><summary> <b>☁️ Zero installation</b> </font> </summary><br>
+
+You can use <code> Interact Inline </code> or <code>Launch in Binder</code> buttons 
+at the top of each page of the <a href="https://neurolibre.github.io/myelin-meta-analysis">Jupyter Book</a>.
+
+Alternatively, you can start a Binder session by clicking the badge below: 
+
+[![Binder](https://github.com/zelenkastiot/binder_badges/blob/master/badges/myelin--meta--analysis-binder.svg)](https://mybinder.org/v2/gh/neurolibre/myelin-meta-analysis/master)
+
+</details>
+
+<br>
+
+<hr>
+<p align="center">
+<img src="https://avatars3.githubusercontent.com/u/63861117?s=200&v=4" style="width:40px;"></img> <br>
+This repository is created by <a href="https://github.com/Notebook-Factory">Notebok-Factory</a>. 
+</p>

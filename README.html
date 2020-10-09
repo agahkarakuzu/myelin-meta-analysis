@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>myelin-meta-analysis &#8212; myelin-meta-analysis</title>
+    <title>The quest for measuring myelin with MRI - An interactive meta-analysis &#8212; The quest for measuring myelin with MRI - An interactive meta-analysis</title>
     
   <link rel="stylesheet" href="_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
 
@@ -44,17 +44,17 @@
     <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/sphinx-book-theme.be0a4a0c39cd630af62a2fcf693f3f06.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
     </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="shortcut icon" href="_static/icon.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
 
@@ -78,7 +78,7 @@
   <img src="_static/logo.png" class="logo" alt="logo">
   
   
-  <h1 class="site-logo" id="site-title">myelin-meta-analysis</h1>
+  <h1 class="site-logo" id="site-title">The quest for measuring myelin with MRI - An interactive meta-analysis</h1>
   
 </a>
 </div>
@@ -92,55 +92,76 @@
   <ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="intro.html">
-   The quest for measuring myelin with MRI – An interactive meta-analysis
+   Introduction
   </a>
  </li>
 </ul>
 <p class="caption">
  <span class="caption-text">
-  part-1
+  Selecting the studies
  </span>
 </p>
 <ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="01/selection.html">
-   Selecting the studies
+   Literature overview
   </a>
  </li>
 </ul>
 <p class="caption">
  <span class="caption-text">
-  part-2
+  A closer look
  </span>
 </p>
 <ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="02/closer_look.html">
-   A closer look
+   Sample size and effect size
   </a>
  </li>
 </ul>
 <p class="caption">
  <span class="caption-text">
-  part-3
+  Using meta-analysis tools
  </span>
 </p>
 <ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="03/meta_analysis.html">
-   Using meta-analysis tools
+   Quantitative comparisons
   </a>
  </li>
 </ul>
 <p class="caption">
  <span class="caption-text">
-  part-4
+  Other factors to consider
  </span>
 </p>
 <ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="04/other_factors.html">
-   Other factors to consider
+   Experimental conditions
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  External links
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference external" href="https://github.com/neurolibre/myelin-meta-analysis">
+   NeuroLibre repository
+   <i class="fas fa-external-link-alt">
+   </i>
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference external" href="https://www.biorxiv.org/content/10.1101/2020.07.13.200972v3">
+   Bioarxiv preprint
+   <i class="fas fa-external-link-alt">
+   </i>
   </a>
  </li>
 </ul>
@@ -196,6 +217,22 @@
 </div>
         <!-- Source interaction buttons -->
 
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/Notebook-Factory/myelin-meta-analysis"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/Notebook-Factory/myelin-meta-analysis/issues/new?title=Issue%20on%20page%20%2FREADME.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
 
         <!-- Full screen (wrap in <a> to have style consistency -->
         <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
@@ -216,30 +253,13 @@
         <nav id="bd-toc-nav">
             <ul class="nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#usage">
-   Usage
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#building-the-book">
-     Building the book
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#hosting-the-book">
-     Hosting the book
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#contributors">
-   Contributors
+  <a class="reference internal nav-link" href="#the-full-preprint-is-available-on-biorxiv">
+   📎The full preprint is available on bioRxiv.
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#credits">
-   Credits
+  <a class="reference internal nav-link" href="#usage-instructions">
+   🖥 Usage instructions
   </a>
  </li>
 </ul>
@@ -253,48 +273,81 @@
         
               <div>
                 
-  <div class="section" id="myelin-meta-analysis">
-<h1>myelin-meta-analysis<a class="headerlink" href="#myelin-meta-analysis" title="Permalink to this headline">¶</a></h1>
-<p>This cookiecutter creates a simple boilerplate for a Jupyter Book.</p>
-<div class="section" id="usage">
-<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="building-the-book">
-<h3>Building the book<a class="headerlink" href="#building-the-book" title="Permalink to this headline">¶</a></h3>
-<p>If you’d like to develop on and build the myelin-meta-analysis book, you should:</p>
-<ul class="simple">
-<li><p>Clone this repository and run</p></li>
-<li><p>Run <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">-r</span> <span class="pre">requirements.txt</span></code> (it is recommended you do this within a virtual environment)</p></li>
-<li><p>(Recommended) Remove the existing <code class="docutils literal notranslate"><span class="pre">myelin-meta-analysis/_build/</span></code> directory</p></li>
-<li><p>Run <code class="docutils literal notranslate"><span class="pre">jupyter-book</span> <span class="pre">build</span> <span class="pre">myelin-meta-analysis/</span></code></p></li>
-</ul>
-<p>A fully-rendered HTML version of the book will be built in <code class="docutils literal notranslate"><span class="pre">myelin-meta-analysis/_build/html/</span></code>.</p>
+  <div class="section" id="the-quest-for-measuring-myelin-with-mri-an-interactive-meta-analysis">
+<h1>The quest for measuring myelin with MRI - An interactive meta-analysis<a class="headerlink" href="#the-quest-for-measuring-myelin-with-mri-an-interactive-meta-analysis" title="Permalink to this headline">¶</a></h1>
+<p><em>Matteo Mancini, Agah Karakuzu, Thomas Nichols, Julien Cohen-Adad, Mara Cercignani, Nikola Stikov</em></p>
+<br>
+<p>This repository generates the interactive figures and the meta-analysis results for our study “The quest for measuring myelin with MRI – An interactive meta-analysis of quantitative comparisons with histology”.</p>
+<div class="section" id="the-full-preprint-is-available-on-biorxiv">
+<h2>📎<a class="reference external" href="https://www.biorxiv.org/content/10.1101/2020.07.13.200972v2">The full preprint is available on bioRxiv.</a><a class="headerlink" href="#the-full-preprint-is-available-on-biorxiv" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="hosting-the-book">
-<h3>Hosting the book<a class="headerlink" href="#hosting-the-book" title="Permalink to this headline">¶</a></h3>
-<p>The html version of the book is hosted on the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> branch of this repo. A GitHub actions workflow has been created that automatically builds and pushes the book to this branch on a push or pull request to main.</p>
-<p>If you wish to disable this automation, you may remove the GitHub actions workflow and build the book manually by:</p>
-<ul class="simple">
-<li><p>Navigating to your local build; and running,</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">ghp-import</span> <span class="pre">-n</span> <span class="pre">-p</span> <span class="pre">-f</span> <span class="pre">myelin-meta-analysis/_build/html</span></code></p></li>
-</ul>
-<p>This will automatically push your build to the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> branch. More information on this hosting process can be found <a class="reference external" href="https://jupyterbook.org/publish/gh-pages.html#manually-host-your-book-with-github-pages">here</a>.</p>
+<div class="section" id="usage-instructions">
+<h2>🖥 Usage instructions<a class="headerlink" href="#usage-instructions" title="Permalink to this headline">¶</a></h2>
+<p>This Jupyter Book is published by NeuroLibre at <a href="https://neurolibre.github.io/myelin-meta-analysis">https://neurolibre.github.io/myelin-meta-analysis</a>, where all the interactive content is made readily available!</p>
+<p>However, several options are available if you would like to reproduce the outputs
+by re-executing the code.</p>
+<details><summary> <b>💻 Execute locally</b> </font> </summary><br>
+<p>The required packages can be installed using pip:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">r</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
+</pre></div>
 </div>
+<hr class="docutils" />
+<p><strong>Note:</strong></p>
+<p>R and the metafor package are both needed to fit the mixed-effect model in <code class="docutils literal notranslate"><span class="pre">meta-analysis.ipynb</span></code> through the package rpy2. Alternatively, you can use the conda environment described in <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code>.</p>
+<hr class="docutils" />
+</details>
+<details><summary> <b>🐳 Use with Docker</b> </font> </summary><br>
+<p>If you have Docker installed on your computer and running, you can run the code
+in the same environment described in this repository using <code class="docutils literal notranslate"><span class="pre">repo2docker</span></code>.</p>
+<ol class="simple">
+<li><p>Simply install <code class="docutils literal notranslate"><span class="pre">repo2docker</span></code> from pyPI:</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">jupyter</span><span class="o">-</span><span class="n">repo2docker</span>
+</pre></div>
 </div>
-<div class="section" id="contributors">
-<h2>Contributors<a class="headerlink" href="#contributors" title="Permalink to this headline">¶</a></h2>
-<p>We welcome and recognize all contributions. You can see a list of current contributors in the <a class="reference external" href="https://github.com/agahkarakuzu/myelin_meta_analysis/graphs/contributors">contributors tab</a>.</p>
+<ol class="simple">
+<li><p>Run the following command in your terminal:</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jupyter</span><span class="o">-</span><span class="n">repo2docker</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">neurolibre</span><span class="o">/</span><span class="n">myelin</span><span class="o">-</span><span class="n">meta</span><span class="o">-</span><span class="n">analysis</span>
+</pre></div>
 </div>
-<div class="section" id="credits">
-<h2>Credits<a class="headerlink" href="#credits" title="Permalink to this headline">¶</a></h2>
-<p>This project is created using the excellent open source <a class="reference external" href="https://jupyterbook.org/">Jupyter Book project</a> and the <a class="reference external" href="https://github.com/executablebooks/cookiecutter-jupyter-book">executablebooks/cookiecutter-jupyter-book template</a>.</p>
+<p>After building (it might take a while!), it should output in your terminal
+something like:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Copy/paste this URL into your browser when you connect for the first time,
+    to login with a token:
+        http://0.0.0.0:36511/?token=f94f8fabb92e22f5bfab116c382b4707fc2cade56ad1ace0
+</pre></div>
 </div>
+<p>This should start a Jupyter session on your browser and make all the resources
+you see when you <a class="reference external" href="https://mybinder.org/v2/gh/neurolibre/myelin-meta-analysis/master">launch a Binder</a> for this repository.</p>
+<p>To re-use your container built by repo2docker, do the following:</p>
+<ol class="simple">
+<li><p>Run <code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">images</span></code> command and copy the <code class="docutils literal notranslate"><span class="pre">IMAGE</span> <span class="pre">ID</span></code> to your clipboard</p></li>
+<li><p>Run the following command to start the container:</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>docker run -it --rm -p 8888:8888 `PASTE IMAGE ID HERE` jupyter notebook --ip 0.0.0.0
+</pre></div>
+</div>
+</details>
+<details><summary> <b>☁️ Zero installation</b> </font> </summary><br>
+<p>You can use <code> Interact Inline </code> or <code>Launch in Binder</code> buttons
+at the top of each page of the <a href="https://neurolibre.github.io/myelin-meta-analysis">Jupyter Book</a>.</p>
+<p>Alternatively, you can start a Binder session by clicking the badge below:</p>
+<p><a class="reference external" href="https://mybinder.org/v2/gh/neurolibre/myelin-meta-analysis/master"><img alt="Binder" src="https://github.com/zelenkastiot/binder_badges/blob/master/badges/myelin--meta--analysis-binder.svg" /></a></p>
+</details>
+<br>
+<hr>
+<p align="center">
+<img src="https://avatars3.githubusercontent.com/u/63861117?s=200&v=4" style="width:40px;"></img> <br>
+This repository is created by <a href="https://github.com/Notebook-Factory">Notebok-Factory</a>. 
+</p></div>
 </div>
 
     <script type="text/x-thebe-config">
     {
         requestKernel: true,
         binderOptions: {
-            repo: "binder-examples/jupyter-stacks-datascience",
+            repo: "Notebook-Factory/myelin-meta-analysis",
             ref: "master",
         },
         codeMirrorConfig: {
@@ -324,9 +377,12 @@
     <div class="container">
       <p>
         
-          By Agah Karakuzu<br/>
+          By Matteo Mancini<br/>
         
             &copy; Copyright 2020.<br/>
+          <div class="extra_footer">
+            Created by the <a href="https://github.com/Notebook-Factory">Notebook Factory team.</a>
+          </div>
       </p>
     </div>
   </footer>
