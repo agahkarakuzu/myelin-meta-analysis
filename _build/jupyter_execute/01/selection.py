@@ -103,6 +103,8 @@ display(HTML('fig1.html'))
 # You can click on each box to expand the related category, and for each study you can find out more details and the link to the original paper.
 # ```
 
+# ### Figure 2
+
 # In[4]:
 
 
