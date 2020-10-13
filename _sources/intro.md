@@ -26,7 +26,7 @@ You can click on each box to expand the related category, and for each study you
 ```
 ````
 
-<center><iframe src="https://agahkarakuzu.github.io/myelin-meta-analysis/fig2.html" height="550" width="700" style="border:none;margin-bottom: 10px;" scrolling="no" frameborder="0"></iframe></center>
+<center><iframe src="https://agahkarakuzu.github.io/figserver/fig2.html" height="550" width="700" style="border:none;margin-bottom: 10px;" scrolling="no" frameborder="0"></iframe></center>
 
 **Why myelin?** Myelin is a key component of the central nervous system. The myelin sheaths insulate axons with a triple effect: allowing fast electrical conduction, protecting the axon, and providing trophic support. The conduction velocity regulation has become an important research topic, with evidence of activity-dependent myelination as an additional mechanism of plasticity. Myelin is also relevant from a clinical perspective, given that demyelination is often observed in several neurological diseases such as multiple sclerosis.
 
