@@ -5,12 +5,12 @@
 # 
 # Given the number of different variables influencing the results, we decided to focus only on brain studies. As we needed to take into account the sample size for quantitative comparisons, we also further selected only the studies that reported both the number of subjects and the number of ROIs (regions of interest) considered for correlation purposes. This further screening led us to 43 studies. For these studies we wanted to quantitatively evaluate the reported effect size taking into account the respective samples sizes: we chose the coefficient of determination R<sup>2</sup>, as it was the most common quantitative result we could obtain from these studies.
 # 
-# ```{admonition} Interactive bubble chart
+# ```{admonition} Figure 3
 # :class: tip
 # To have a look at both sample size and effect size for each measure, we prepared an interactive bubble chart, where the size of each bubble is proportional to the sample size. You can hover on the bubbles to obtain additional details.
 # ```
 
-# In[1]:
+# In[2]:
 
 
 import numpy as np
@@ -29,7 +29,7 @@ import rpy2.robjects
 
 # ### Figure 3
 
-# In[2]:
+# In[3]:
 
 
 config={'showLink': False, 'displayModeBar': False}
@@ -135,11 +135,17 @@ plot(fig3, filename = 'fig3.html',config = config)
 display(HTML('fig3.html'))
 
 
+# To provide a different way to explore sample size and effect size, we also prepared another treemap, where the studies are organised by measures. For each study, the area of its box is proportional to the sample size, while the color represents the related coefficient of determination.
+# 
+# 
+# ```{admonition} Figure 4
+# :class: tip
+# You can click on each box to expand the related category, and for each study you can find out more details.
+# ```
+
 # ### Figure 4
 
-# To provide a different way to explore sample size and effect size, we also prepared another treemap, where the studies are organised by measures. For each study, the area of its box is proportional to the sample size, while the color represents the related coefficient of determination.
-
-# In[3]:
+# In[4]:
 
 
 filtered_df=filtered_df.sort_values(by=['Study','Measure'])

@@ -3,7 +3,12 @@
 
 # ## Quantitative comparisons
 # 
-# Can we express quantitatively what we observed in the previous plots? This is where the meta-analysis tools come in: we used the R package [metafor](http://www.metafor-project.org/doku.php) to fit a mixed-effect (ME) model to the data reported for each measure. In this way, we can estimate an overall interval of R<sup>2</sup> values based on the effect sizes and the sample sizes. We can also estimate the interval of R<sup>2</sup> that we can expect in future studies (this is called prediction interval). A compact way to represent these results is given by forest plots: for each study, we represent the effect size and the related sample size using a square and a horizontal error bar; then for each measure, we represent the results from the ME model using a diamond and an additional error bar; finally to represent the prediction interval we use two hourglasses and a dotted line.
+# Can we express quantitatively what we observed in the previous plots? This is where the meta-analysis tools come in: we used the R package [metafor](http://www.metafor-project.org/doku.php) to fit a mixed-effect (ME) model to the data reported for each measure. In this way, we can estimate an overall interval of R<sup>2</sup> values based on the effect sizes and the sample sizes. We can also estimate the interval of R<sup>2</sup> that we can expect in future studies (this is called prediction interval). 
+# 
+# ```{admonition} Figure 5
+# :class: tip
+# A compact way to represent these results is given by forest plots: for each study, we represent the effect size and the related sample size using a square and a horizontal error bar; then for each measure, we represent the results from the ME model using a diamond and an additional error bar; finally to represent the prediction interval we use two hourglasses and a dotted line.
+# ```
 
 # In[1]:
 
@@ -138,13 +143,16 @@ plot(fig5, filename = 'fig5.html',config = config)
 display(HTML('fig5.html'))
 
 
-# Can some of this variance be explained by the differences in methodological choices and experimental conditions we mention? The number of studies is limited for a quantitative evaluation, but we can get a qualitative idea using bar plots and scatter plots organized by each condition.
+# The forest plot offers a detailed summary for each measure. What if we want to compare the R<sup>2</sup> estimates across measures? To do that, we pooled together all the measures from all the studies and computed first a repeated measures meta-regression and then all the possible pairwise comparisons (Tukey's test), correcting for multiple comparisons (Bonferroni correction). 
+# 
+# ```{admonition} Figure 6
+# :class: tip
+# To visually represent these results, we used two heatmaps, one for the z-scores and one for the p-values: each element refers to the comparison between the measure on the x axis and the one on the y axis.
+# ```
 
 # ### Figure 6
 
-# The forest plot offers a detailed summary for each measure. What if we want to compare the R<sup>2</sup> estimates across measures? To do that, we pooled together all the measures from all the studies and computed first a repeated measures meta-regression and then all the possible pairwise comparisons (Tukey's test), correcting for multiple comparisons (Bonferroni correction). To visually represent these results, we used two heatmaps, one for the z-scores and one for the p-values: each element refers to the comparison between the measure on the x axis and the one on the y axis.
-
-# In[5]:
+# In[3]:
 
 
 multcomp = importr('multcomp')

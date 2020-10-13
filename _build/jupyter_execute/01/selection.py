@@ -5,9 +5,10 @@
 # 
 # First, how were the studies selected? We used the [Medline database](https://pubmed.ncbi.nlm.nih.gov) and retrieved all the records mentioning (1) myelin, (2) MRI and (3) histology (or a related technique). The full list of keywords is provided in the preprint.
 # 
-# ```{admonition} The following Sankey diagram shows the screening process
+# 
+# ```{admonition} Figure 1
 # :class: tip
-# You can hover with the mouse on each block and connection to see details about the number of studies and exclusion criteria.
+# The Sankey diagram shows the screening procdess. You can hover with the mouse on each block and connection to see details about the number of studies and exclusion criteria.
 # ```
 
 # In[1]:
@@ -29,7 +30,7 @@ import rpy2.robjects
 
 # ### Figure 1
 
-# In[7]:
+# In[2]:
 
 
 config={'showLink': False, 'displayModeBar': False}
@@ -95,11 +96,14 @@ plot(fig1, filename = 'fig1.html',config = config)
 display(HTML('fig1.html'))
 
 
-# We identified 58 studies reporting quantitative comparisons between MRI and histology: these included a variety of methodological choices and experimental conditions, in terms of tissue type (brain, spinal cord, peripheral nerve), condition (*in vivo*, *ex vivo*, *in situ*), species (human, animal), pathology model, and many more. A glimpse of these subdivisions is provided in the following treemap. You can click on each box to expand the related category, and for each study you can find out more details and the link to the original paper.
+# We identified 58 studies reporting quantitative comparisons between MRI and histology: these included a variety of methodological choices and experimental conditions, in terms of tissue type (brain, spinal cord, peripheral nerve), condition (*in vivo*, *ex vivo*, *in situ*), species (human, animal), pathology model, and many more. A glimpse of these subdivisions is provided in the following treemap.
+# 
+# ```{admonition} Figure 2
+# :class: tip
+# You can click on each box to expand the related category, and for each study you can find out more details and the link to the original paper.
+# ```
 
-# ### Figure 2 
-
-# In[8]:
+# In[4]:
 
 
 info = pd.read_excel('database.xlsx', sheet_name='Details')
@@ -148,7 +152,10 @@ fig2 = fig2.update_layout(
     width=680,
     height=600,
     margin=dict(
-        l=0
+        l=0,
+        r=0,
+        t=0,
+        b=0,
     )
 )
 

@@ -1,8 +1,13 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# ## Experimental conditions
+# ## Potential confounders
 # Can some of this variance be explained by the differences in methodological choices and experimental conditions we mention? The number of studies is limited for a quantitative evaluation, but we can get a qualitative idea using bar plots and scatter plots organized by each condition.
+# 
+# ```{admonition} Figure 7
+# :class: tip
+# Distributions of R<sup>2</sup> values in relation to the reference techniques, pathology and tissue types are visualized using box plots. You can mouse over markers to see the studies they are drawn from.
+# ```
 
 # In[1]:
 
@@ -23,7 +28,7 @@ import rpy2.robjects
 
 # ### Figure 7
 
-# In[3]:
+# In[2]:
 
 
 config={'showLink': False, 'displayModeBar': False}
@@ -133,9 +138,15 @@ plot(fig7, filename = 'fig7.html',config = config)
 display(HTML('fig7.html'))
 
 
+# 
+# ```{admonition} Figure 8
+# :class: tip
+# Other potential confounders include magnetic field strength, tissue conditions, co-registration and tissue type. You can mouse over markers in each panel to see the corresponding studies.
+# ```
+# 
 # ### Figure 8
 
-# In[4]:
+# In[3]:
 
 
 measure_type = {'Diffusion':['RD', 'AD', 'FA', 'MD',
@@ -150,7 +161,7 @@ measure_type = {'Diffusion':['RD', 'AD', 'FA', 'MD',
 color_dict = {m:plotly.colors.qualitative.Bold[n]
               for n,m in enumerate(measure_type.keys())}
 
-fig8 = make_subplots(rows=2, cols=2, start_cell="top-left", vertical_spacing=0.15, y_title='R<sup>2</sup>',
+fig8 = make_subplots(rows=2, cols=2, start_cell="top-left", vertical_spacing=0.18, y_title='R<sup>2</sup>',
                      subplot_titles=['R<sup>2</sup> values and magnetic fields',
                                      'R<sup>2</sup> values and tissue conditions',
                                      'R<sup>2</sup> values and co-registration',
