@@ -7,6 +7,7 @@ _Matteo Mancini, Agah Karakuzu, Thomas Nichols, Julien Cohen-Adad, Mara Cercigna
 
 This Jupyter Book explores an important aspect of quantitative magnetic resonance imaging (qMRI): **validation**. Focusing specifically on **myelin measures**, we show the results of our **meta-analysis comparing quantitative MRI with histology**. [The full preprint is available on bioRxiv.](https://www.biorxiv.org/content/10.1101/2020.07.13.200972v3)
 
+<iframe src="https://agahkarakuzu.github.io/myelin-meta-analysis/fig2.html" height="600" width="700" style="border:none;margin-left: 10px;margin-bottom: 10px;" scrolling="no" frameborder="0"></iframe>
 
 **Why myelin?** Myelin is a key component of the central nervous system. The myelin sheaths insulate axons with a triple effect: allowing fast electrical conduction, protecting the axon, and providing trophic support. The conduction velocity regulation has become an important research topic, with evidence of activity-dependent myelination as an additional mechanism of plasticity. Myelin is also relevant from a clinical perspective, given that demyelination is often observed in several neurological diseases such as multiple sclerosis.
 
