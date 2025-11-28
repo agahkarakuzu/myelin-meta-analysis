@@ -3,3 +3,4 @@ pandas
 plotly
 rpy2==3.3.4
 xlrd==1.2.0
+openpyxl
