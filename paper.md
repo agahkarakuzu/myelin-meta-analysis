@@ -50,11 +50,17 @@ In this work, we explore important aspect of quantitative magnetic resonance ima
 
 # Introduction
 
-**Why myelin?:** Myelin is a key component of the central nervous system. The myelin sheaths insulate axons with a triple effect: allowing fast electrical conduction, protecting the axon, and providing trophic support. The conduction velocity regulation has become an important research topic, with evidence of activity-dependent myelination as an additional mechanism of plasticity. Myelin is also relevant from a clinical perspective, given that demyelination is often observed in several neurological diseases such as multiple sclerosis.
+## Why myelin?
 
-**How qMRI measures validated?:** Similarly to other qMRI biomarkers, MRI-based myelin measurements are noisy, indirect, and might be affected by other microstructural features. Assessing the accuracy of such measurements, as well as their sensitivity to change, is essential for their translation into clinical practice. That is why histological validation is necessary. The most common validation approach is based on acquiring MR data from in vivo or ex vivo tissue and then comparing those data with the related samples analysed using histological techniques.
+Myelin is a key component of the central nervous system. The myelin sheaths insulate axons with a triple effect: allowing fast electrical conduction, protecting the axon, and providing trophic support. The conduction velocity regulation has become an important research topic, with evidence of activity-dependent myelination as an additional mechanism of plasticity. Myelin is also relevant from a clinical perspective, given that demyelination is often observed in several neurological diseases such as multiple sclerosis.
 
-**Why meta analysis?:** So far, a long list of studies have looked at MRI-histology comparisons, each of them focusing on a specific pathology and a few MRI measures. Despite these numerous studies, there is still an ongoing debate on what MRI measure should be used to quantify myelin and as a consequence there is a constant methodological effort to propose new measures. We believe that this debate would benefit from a quantitative analysis of all the findings published so far, specifically addressing inter-study variations and prospects for future studies, something that is currently missing from the literature.
+## How qMRI measures validated?
+
+Similarly to other qMRI biomarkers, MRI-based myelin measurements are noisy, indirect, and might be affected by other microstructural features. Assessing the accuracy of such measurements, as well as their sensitivity to change, is essential for their translation into clinical practice. That is why histological validation is necessary. The most common validation approach is based on acquiring MR data from in vivo or ex vivo tissue and then comparing those data with the related samples analysed using histological techniques.
+
+## Why meta analysis?
+
+So far, a long list of studies have looked at MRI-histology comparisons, each of them focusing on a specific pathology and a few MRI measures. Despite these numerous studies, there is still an ongoing debate on what MRI measure should be used to quantify myelin and as a consequence there is a constant methodological effort to propose new measures. We believe that this debate would benefit from a quantitative analysis of all the findings published so far, specifically addressing inter-study variations and prospects for future studies, something that is currently missing from the literature.
 
 # Literature overview
 
@@ -132,12 +138,12 @@ Forest plots showing the R2 values reported by the studies and estimated from th
 The forest plot offers a detailed summary for each measure. What if we want to compare the R{sup}`2` estimates across measures? To do that, we pooled together all the measures from all the studies and computed first a repeated measures meta-regression and then all the possible pairwise comparisons (Tukey's test), correcting for multiple comparisons (Bonferroni correction). 
 
 :::{tip} Figure 6
-:label: fig6
 
 To visually represent these results, we used two heatmaps, one for the z-scores and one for the p-values: each element refers to the comparison between the measure on the x axis and the one on the y axis.
 :::
 
 :::{figure} #fig6cell
+:label: fig6
 
 Results from the repeated measures meta-regression, displayed in terms of z-scores (left) and p-values (right) for each pairwise comparison across all the MRI measures.
 In the z-score heatmap, each element refers to the comparison between the measure on the x axis with the one on the y axis. For example, MPF and FA (z-score = 7.14; p-value<0.0001) are statistically different, while MPF and T1 (z-score = 2.51; p-value=0.43) are not statistically different
@@ -153,6 +159,7 @@ Distributions of R{sup}`2` values in relation to the reference techniques, patho
 :::
 
 :::{figure} #fig7cell
+:label: fig7
 
 Experimental conditions and methodological choices influencing the R{sup}`2` values (top: reference techniques; middle: pathology model; bottom: tissue types).
 :::
@@ -160,6 +167,7 @@ Experimental conditions and methodological choices influencing the R{sup}`2` val
 
 
 :::{figure} #fig8cell
+:label: fig8
 
 Other potential confounders include magnetic field strength, tissue conditions, co-registration and tissue type. You can mouse over markers in each panel to see the corresponding studies.
 :::
