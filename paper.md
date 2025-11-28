@@ -164,6 +164,9 @@ Experimental conditions and methodological choices influencing the R{sup}`2` val
 Other potential confounders include magnetic field strength, tissue conditions, co-registration and tissue type. You can mouse over markers in each panel to see the corresponding studies.
 :::
 
+# Conclusion
+
+Several MRI measures are sensitive to myelin content and the current literature suggests that most of them are not statistically different in terms of their relationship with the underlying histology. Measures highly correlated with histology are also the ones with a higher expected specificity. This suggests that future studies should try to better address how specific each measure is, for the sake of clarifying suitable applications.
 
 +++ { "part": "acknowledgements" }
 MM was funded by the Wellcome Trust through a Sir Henry Wellcome Postdoctoral Fellowship [213722/Z/18/Z]. TEN was supported by NIH grant R01MH096906.
