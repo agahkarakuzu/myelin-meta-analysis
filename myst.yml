@@ -1,0 +1,124 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  title: 'The quest for measuring myelin with MRI - An interactive meta-analysis'
+  authors:
+    - name: Matteo Mancini
+      orcid: 0000-0001-7194-4568
+      affiliations: polymtl;
+    - name: Agah Karakuzu
+      orcid: 0000-0001-7283-271X
+      affiliations: polymtl; mhi
+      twitter: agahkarakuzu
+      url: https://agah.dev
+      github: agahkarakuzu
+    - name: Julien Cohen-Adad
+      orcid: 0000-0003-3662-9532
+      affiliations: polymtl; unf; mila
+    - name: Mara Cercignani
+      orcid: 0000-0002-4550-2456
+    - name: Thomas E. Nichols
+      orcid: 0000-0002-4516-5103
+      affiliations: bigdata; wellcome
+    - name: Nikola Stikov
+      orcid: 0000-0002-8480-5230
+      affiliations: polymtl; mhi; macedonia
+  affiliations:
+    - id: polymtl
+      institution: NeuroPoly Lab, Polytechnique Montreal
+      ror: https://ror.org/05f8d4e86
+      isni: 0000 0004 0435 3292
+      department: Electrical Engineering
+      address: 2500 Chem. de Polytechnique
+      city: Montreal
+      region: Quebec
+      country: Canada
+      postal_code: H3T 1J4
+      phone: 1 (514) 340-4711
+    - id: mhi
+      institution: Montreal Heart Institute
+      ror: https://ror.org/03vs03g62
+      isni: 0000 0000 8995 9090
+      address: 5000 Rue Belanger
+      city: Montreal
+      region: Quebec
+      country: Canada
+      postal_code: H1T 1C8
+    - id: uoft
+      institution: Sunnybrook Research Institute
+      ror: https://ror.org/05n0tzs53
+      city: Toronto
+      region: Ontario
+      country: Canada
+    - id: unf
+      institution: Functional Neuroimaging Unit, CRIUGM
+      ror: https://ror.org/0161xgx34
+      city: Montreal
+      region: Quebec
+      country: Canada
+    - id: mila
+      institution: Mila - Quebec Artificial Intelligence Institute
+      ror: https://ror.org/05c22rx21
+      city: Montreal
+      region: Quebec
+      country: Canada
+    - id: macedonia
+      name: Center for Advanced Interdisciplinary Research, University Ss Cyril and Methodius in Skopje
+      ror: https://ror.org/02wk2vx54
+      isni: 0000 0001 0708 5391
+      address:  Boulevard Goce Delchev 9
+      city: Skopje
+      country: North Macedonia
+      postal_code: 1000
+    - id: wellcome
+      institution: Wellcome Centre for Integrative Neuroimaging
+      city: Oxford
+      country: United Kingdom
+    - id: bigdata
+      institution: Big Data Institute, University of Oxford
+      city: Oxford
+      country: United Kingdom
+    - id: sussex
+      institution: University of Sussex
+      city: Brighton
+      country: United Kingdom
+  keywords:
+    - relaxometry
+    - myelin
+    - metanalysis
+    - modalities
+    - MRI
+    - magnetic resonance imaging
+    - medicine
+    - neuroscience
+    - radiology
+  github: https://github.com/agahkarakuzu/myelin-meta-analysis
+  binder: htttps://terrarium.evidencepub.io
+  thebe:
+    binder:
+      repo: roboneurolibre/myelin-meta-analysis
+  banner: banner.jpg
+  venue: Neurolibre
+  subject: Living Preprint
+  numbering:
+    headings: true
+  doi: 10.55458/neurolibre.00004
+  open_access: true
+  license:
+    content: CC-BY-4.0
+    code: MIT
+  abbreviations:
+    MTR: Magnetization Transfer Ratio
+    MTsat: Magnetization Transfer Saturation
+    ISMRM: International Society for Magnetic Resonance in Medicine
+    NIST: National Institute of Standards and Technology
+  toc:
+    - file: paper.md
+    - file: content/01/selection.ipynb
+    - file: content/02/closer_look.ipynb
+  exclude:
+    - README.md
+  bibliography:
+    - paper.bib
+site:
+  template: article-theme

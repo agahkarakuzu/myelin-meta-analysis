@@ -1,8 +1,5 @@
-jupyter-book
-jupytext
-numpy==1.18.4
-pandas==0.25.3
-plotly==4.8.1
+numpy
+pandas
+plotly
 rpy2==3.3.4
 xlrd==1.2.0
-repo2data
