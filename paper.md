@@ -113,20 +113,58 @@ Treemap chart of the studies considered for the meta-analysis, organized by MRI 
 :::
 
 
-## Quantitative comparisons
+# Quantitative comparisons
 
 Can we express quantitatively what we observed in the previous plots? This is where the meta-analysis tools come in: we used the R package [metafor](http://www.metafor-project.org/doku.php) to fit a mixed-effect (ME) model to the data reported for each measure. In this way, we can estimate an overall interval of R{sup}`2` values based on the effect sizes and the sample sizes. We can also estimate the interval of R{sup}`2` that we can expect in future studies (this is called prediction interval). 
 
-```{admonition} Figure 5
-:class: tip
+:::{tip} Figure 5
+
 A compact way to represent these results is given by forest plots: for each study, we represent the effect size and the related sample size using a square and a horizontal error bar; then for each measure, we represent the results from the ME model using a diamond and an additional error bar; finally to represent the prediction interval we use two hourglasses and a dotted line.
-```
+:::
+
+:::{figure} #fig5cell
+:label: fig5
+
+Forest plots showing the R2 values reported by the studies and estimated from the mixed-effect model for each measure. The hourglasses and the dotted lines in the mixed-effect model outcomes represent the prediction intervals. 
+:::
+
+
+The forest plot offers a detailed summary for each measure. What if we want to compare the R{sup}`2` estimates across measures? To do that, we pooled together all the measures from all the studies and computed first a repeated measures meta-regression and then all the possible pairwise comparisons (Tukey's test), correcting for multiple comparisons (Bonferroni correction). 
+
+:::{tip} Figure 6
+:label: fig6
+
+To visually represent these results, we used two heatmaps, one for the z-scores and one for the p-values: each element refers to the comparison between the measure on the x axis and the one on the y axis.
+:::
+
+:::{figure} #fig6cell
+
+Results from the repeated measures meta-regression, displayed in terms of z-scores (left) and p-values (right) for each pairwise comparison across all the MRI measures.
+In the z-score heatmap, each element refers to the comparison between the measure on the x axis with the one on the y axis. For example, MPF and FA (z-score = 7.14; p-value<0.0001) are statistically different, while MPF and T1 (z-score = 2.51; p-value=0.43) are not statistically different
+:::
+
+## Potential confounders
+
+Can some of this variance be explained by the differences in methodological choices and experimental conditions we mention? The number of studies is limited for a quantitative evaluation, but we can get a qualitative idea using bar plots and scatter plots organized by each condition.
+
+:::{tip} Figure 7
+
+Distributions of R{sup}`2` values in relation to the reference techniques, pathology and tissue types are visualized using box plots. You can mouse over markers to see the studies they are drawn from.
+:::
+
+:::{figure} #fig7cell
+
+Experimental conditions and methodological choices influencing the R{sup}`2` values (top: reference techniques; middle: pathology model; bottom: tissue types).
+:::
 
 
 
+:::{figure} #fig8cell
 
-# Acknowledgements
+Other potential confounders include magnetic field strength, tissue conditions, co-registration and tissue type. You can mouse over markers in each panel to see the corresponding studies.
+:::
 
+
++++ { "part": "acknowledgements" }
 MM was funded by the Wellcome Trust through a Sir Henry Wellcome Postdoctoral Fellowship [213722/Z/18/Z]. TEN was supported by NIH grant R01MH096906.
-
-# References
++++

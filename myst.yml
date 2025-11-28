@@ -96,7 +96,7 @@ project:
   binder: htttps://terrarium.evidencepub.io
   thebe:
     binder:
-      repo: roboneurolibre/myelin-meta-analysis
+      repo: agahkarakuzu/myelin-meta-analysis
   banner: banner.jpg
   venue: Neurolibre
   subject: Living Preprint
@@ -116,6 +116,8 @@ project:
     - file: paper.md
     - file: content/01/selection.ipynb
     - file: content/02/closer_look.ipynb
+    - file: content/03/meta_analysis.ipynb
+    - file: content/04/other_factors.ipynb
   exclude:
     - README.md
   bibliography:
